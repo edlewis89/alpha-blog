@@ -1,46 +1,108 @@
-// import the CSS framework
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
-// make all images responsive by default
-img {
-  @extend .img-responsive;
-  margin: 0 auto;
-  }
-// override for the 'Home' navigation link
-.navbar-brand {
-  font-size: inherit;
-  }
-
-// THESE ARE EXAMPLES YOU CAN MODIFY
-// create your own classes
-// to make views framework-neutral
-.column {
-  @extend .col-md-6;
-  @extend .text-center;
-  }
-.form {
-  @extend .col-md-6;
-  }
-.form-centered {
-  @extend .col-md-6;
-  @extend .text-center;
-  }
-.submit {
-  @extend .btn;
-  @extend .btn-primary;
-  @extend .btn-lg;
-  }
-// apply styles to HTML elements
-// to make views framework-neutral
-main {
-  @extend .container;
-  background-color: #eee;
-  padding-bottom: 80px;
-  width: 100%;
-  margin-top: 51px; // accommodate the navbar
-  }
-section {
-  @extend .row;
-  margin-top: 20px;
-  }
+//// import the CSS framework
+//@import "bootstrap";
+//
+//// make all images responsive by default
+//img {
+//  @extend .img-responsive;
+//  margin: 0 auto;
+//  }
+//// override for the 'Home' navigation link
+//.navbar-brand {
+//  font-size: inherit;
+//  }
+//
+//// THESE ARE EXAMPLES YOU CAN MODIFY
+//// create your own classes
+//// to make views framework-neutral
+//.column {
+//  @extend .col-md-6;
+//  @extend .text-center;
+//  }
+//.form {
+//  @extend .col-md-6;
+//  }
+//.form-centered {
+//  @extend .col-md-6;
+//  @extend .text-center;
+//  }
+//.submit {
+//  @extend .btn;
+//  @extend .btn-primary;
+//  @extend .btn-lg;
+//  }
+//// apply styles to HTML elements
+//// to make views framework-neutral
+//main {
+//  @extend .container;
+//  background-color: #eee;
+//  padding-bottom: 80px;
+//  width: 100%;
+//  margin-top: 51px; // accommodate the navbar
+//  }
+//section {
+//  @extend .row;
+//  margin-top: 20px;
+//  }
+//
+//#flash-messages-section{
+//  position: absolute;
+//  z-index: 9999;
+//  width: 100%;
+//}
+//
+//.field_with_errors label,
+//.field_with_errors .form-control-feedback,
+//.field_with_errors .form-control-label,
+//.field_with_errors .col-form-label,
+//.field_with_errors .form-check-label,
+//.field_with_errors .custom-control {
+//  color: #d9534f;
+//}
+//
+//.field_with_errors .form-control {
+//  border-color: #d9534f;
+//}
+//
+//.field_with_errors .input-group-addon {
+//  color: #d9534f;
+//  border-color: #d9534f;
+//  background-color: #fdf7f7;
+//}
+//
+//.field_with_errors .form-control-danger {
+//  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d9534f' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E");
+//}
+//
+//.field_with_errors {
+//  padding: 2px;
+//  background-color: red;
+//  display: table;
+//}
+//
+//#error_explanation {
+//  width: 450px;
+//  border: 2px solid red;
+//  padding: 7px 7px 0;
+//  margin-bottom: 20px;
+//  background-color: #f0f0f0;
+//}
+//
+//#error_explanation h2 {
+//  text-align: left;
+//  font-weight: bold;
+//  padding: 5px 5px 5px 15px;
+//  font-size: 12px;
+//  margin: -7px -7px 0;
+//  background-color: #c00;
+//  color: #fff;
+//}
+//
+//#error_explanation ul li {
+//  font-size: 12px;
+//  list-style: square;
+//}
+//
+//label.required:after {
+//  content:" *";
+//}
+//
