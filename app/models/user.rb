@@ -1,6 +1,6 @@
 require_dependency '../validators/email_validator.rb'
 class User < ApplicationRecord
-
+  has_many :articles
   validates :username, presence: true,
             uniqueness: { case_sensitive: false },
             length: { minimum: 3, maximum: 25 }
@@ -8,6 +8,6 @@ class User < ApplicationRecord
             :uniqueness => true,
             length: { maximum: 105 },
             email: true
-  has_many :articles
+
 
 end
