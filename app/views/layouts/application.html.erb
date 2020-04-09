@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= content_for?(:title) ? yield(:title) : "Collab App" %></title>
+  <title><%= content_for?(:title) ? yield(:title) : "Alpha Blog App" %></title>
   <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Collab App" %>">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
@@ -13,8 +13,10 @@
   <%= render 'layouts/navigation' %>
 </header>
 <main role="main">
-  <%= render 'layouts/messages' %>
-  <%= yield %>
+  <div id="page-content">
+    <%= render 'layouts/messages' %>
+    <%= yield %>
+  </div>
 </main>
 <footer>
   <%= render 'layouts/footer' %>

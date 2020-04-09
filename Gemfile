@@ -18,7 +18,6 @@ gem 'uglifier', '>= 1.3.0'
 
 # CSS framework
 gem 'bootstrap', '~> 4.4.1'
-gem "bootstrap_form", "~> 4.0"
 
 # JQuery
 gem 'jquery-rails'
