@@ -1,18 +1,2 @@
 <h1 class="text-center mt-4">Welcome to <%= @user.username %> page</h1>
-
-<div class="container">
-  <div class="row justify-content-md-center">
-    <div class="col-8 mt-4">
-
-      <div class="card text-center shadow mb-5 bg-white rounded">
-        <div class="card-header font-italic">
-          <%= gravatar_for @user, size: 80 %>
-        </div>
-
-        <h4 align="center"><%=  @user.username %>'s articles</h4>
-        <%= render "articles/article", obj: @user.articles %>
-
-      </div>
-    </div>
-  </div>
-</div>
+<%= render "user", obj: @user %>
