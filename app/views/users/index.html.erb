@@ -1,2 +1,11 @@
 <h1 class="text-center mt-4">Users Listings</h1>
-<%= render 'user', obj: @users %>
+
+<div class="flicker_pagination">
+  <%= will_paginate @user_articles, container: false %>
+</div>
+
+  <%= render 'list_users', obj: @users %>
+
+<div class="flicker_pagination">
+  <%= will_paginate @user_articles, container: false %>
+</div>
